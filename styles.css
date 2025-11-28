@@ -1,0 +1,60 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #f3f3f3;
+}
+
+header {
+    text-align: center;
+    padding: 15px;
+    background: #1e3a5f;
+    color: white;
+}
+
+#map {
+    width: 99vw;
+    height: 90vh;
+}
+
+/* Панель информации: Изменено для центрирования справа */
+#info-panel {
+    position: absolute;
+    top: 50%; /* Центрируем по вертикали */
+    transform: translateY(-50%); /* Сдвигаем вверх на половину собственной высоты */
+    right: 20px;
+    width: 280px;
+    background: white;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+    z-index: 999;
+}
+
+#info-panel.hidden {
+    display: none;
+}
+
+#close-panel {
+    background: none;
+    border: none;
+    font-size: 16px;
+    float: right;
+    cursor: pointer;
+}
+
+/* Стили для кастомного маркера */
+.custom-marker-icon {
+    border-radius: 50%;
+    width: 15px !important;
+    height: 15px !important;
+    background-color: blue; /* Базовый цвет */
+    border: 2px solid white;
+    transition: background-color 0.2s, box-shadow 0.2s;
+    cursor: pointer;
+}
+
+/* Стили для маркера при наведении (подсветка красным) */
+.custom-marker-icon:hover {
+    background-color: red !important; /* Цвет при наведении */
+    box-shadow: 0 0 10px red;
+}

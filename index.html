@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Великое посольство Петра I — Карта;УрФУ,АТ-02.1</title>
+    <link rel="stylesheet" href="styles.css">
+
+    <!-- Leaflet -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.3/dist/leaflet.css"/>
+    <script src="https://unpkg.com/leaflet@1.9.3/dist/leaflet.js"></script>
+</head>
+<body>
+
+<header>
+    <h1>Великое посольство Петра I (1697–1698)</h1>
+    <p>Карта путешествия с историческими границами Европы XVII века</p>
+</header>
+
+<div id="map"></div>
+
+<!-- Информационное окно -->
+<div id="info-panel" class="hidden">
+    <button id="close-panel">✖</button>
+    <h2 id="city-name"></h2>
+    <p><strong>Страна:</strong> <span id="country"></span></p>
+    <p><strong>Цель визита:</strong></p>
+    <p id="purpose"></p>
+    <p><strong>С кем встречался:</strong></p>
+    <p id="contacts"></p>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
